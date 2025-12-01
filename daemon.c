@@ -29,7 +29,7 @@ int rv = EXIT_FAILURE;
 
    if( signal( SIGTERM, signalHandler ) == SIG_ERR )
    {
-      syslog( LOG_ERR, "Failed install the signal handler : %s", strerror( errno ) );
+      syslog( LOG_ERR, "Failed to install the signal handler : %s", strerror( errno ) );
       goto cleanup;
    }
 
